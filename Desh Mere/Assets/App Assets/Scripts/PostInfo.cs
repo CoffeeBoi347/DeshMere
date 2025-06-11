@@ -29,7 +29,7 @@ public class PostInfo : MonoBehaviour
     {
         if (postImageRef != null && postImage != null)
         {
-            postImageRef.sprite = postImage;
+            // to do with scriptable objects
         }
     }
 

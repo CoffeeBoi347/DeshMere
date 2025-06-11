@@ -23,10 +23,10 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        OpenMenu(panels[4]);
+        OpenMenu(3);
     }
 
-    public void OpenMenu(GameObject menuObj)
+    public void OpenMenu(int index)
     {
         foreach(var obj in  panels)
         {
@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
             getComponentCanvasGroup.interactable = false;
             getComponentCanvasGroup.blocksRaycasts = false;
 
-            var getCompCanvasGroupObj2 = menuObj.GetComponent<CanvasGroup>();
+            var getCompCanvasGroupObj2 = panels[index].GetComponent<CanvasGroup>();
             getCompCanvasGroupObj2.alpha = 1;
             getCompCanvasGroupObj2.interactable = true;
             getCompCanvasGroupObj2.blocksRaycasts = true;

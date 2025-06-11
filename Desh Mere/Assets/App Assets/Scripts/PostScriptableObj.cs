@@ -5,6 +5,7 @@ public class PostScriptableObj : ScriptableObject
 {
     public Sprite imageObj;
     public string userName;
+    public string userCaption;
     public string userMessage;
     public string addressLine;
     public string axisAddress;
